@@ -23,6 +23,7 @@ typedef enum {
 @property (strong) NSManagedObjectContext* managedObjectContext;
 @property (readonly) NSFetchedResultsController* theResultsController;
 @property (readonly) NSNumberFormatter* priceFormat;
+@property (retain, nonatomic) NSNumber* budget;
 -(Item*) itemInList:(NSInteger) listType atIndexPath:(NSIndexPath*) indexPath;
 -(NSInteger) quantityForItem:(Item*) item inList:(NSInteger) listType;
 -(NSNumber*) getPriceForList:(NSInteger)listType;

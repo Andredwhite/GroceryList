@@ -31,6 +31,7 @@
 @synthesize managedObjectContext;
 @synthesize theResultsController;
 @synthesize priceFormat;
+@synthesize budget;
 
 -(instancetype) init{
     self=[super init];
@@ -121,7 +122,6 @@
         abort();
     }
 }
-
 -(NSNumber*) getPriceForList:(NSInteger) listType{
     NSArray* list=[self getListWithType:listType];
     double totalPrice=0;
@@ -247,6 +247,17 @@
         return [itemsWithCat objectAtIndex: indexPath.row];
     }
     return nil;
+}
+/*  Purpose: Check if the List is overbudget
+    Params:None
+    Ret: YES if the list is over budget, NO if not.
+ */
+-(BOOL) mainListOverBudget{
+    if ([[self getPriceForList:MAIN] doubleValue]> [[self budget] doubleValue]) {
+        return YES;
+    }
+    else
+        return NO;
 }
 -(BOOL) yaFav:(Item*) item{
     NSString* name=item.itemName;
