@@ -10,5 +10,5 @@
 #import <AVFoundation/AVFoundation.h>
 @interface UPCScannerViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIView *viewPreview;
-@property (strong, nonatomic) id<AVCaptureMetadataOutputObjectsDelegate> delegate;
+@property (weak, nonatomic) id<AVCaptureMetadataOutputObjectsDelegate> delegate;
 @end

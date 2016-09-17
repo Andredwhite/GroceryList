@@ -19,7 +19,7 @@ typedef enum{
     PRICING
 }parseState;
 @interface InternetConnection ()<NSXMLParserDelegate>
-@property (retain, nonatomic) id<InternetConnectionProtocol> theDelegate;
+@property (weak, nonatomic) id<InternetConnectionProtocol> theDelegate;
 @property (retain, nonatomic) GroceryItem* currentItem;
 @property (retain, nonatomic) NSMutableArray* items;
 @property (retain, nonatomic) NSMutableString* current;

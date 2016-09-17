@@ -15,7 +15,6 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) GLDataController* dataController;
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
-@property (assign, nonatomic) BOOL cameraAuthorized;
 - (void)saveContext;
 
 
