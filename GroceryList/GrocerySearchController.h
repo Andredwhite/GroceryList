@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-typedef enum {
-}storeType;
+
 @class GroceryItem;
 @interface GrocerySearchController : NSObject
 @property (retain, nonatomic)NSDictionary* resultsByCategory;

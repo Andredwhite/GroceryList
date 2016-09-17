@@ -25,9 +25,6 @@
 @synthesize delegate;
 
 
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return (UIInterfaceOrientationMaskPortrait);
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
     //AppDelegate* appDelegate=(AppDelegate*)[[UIApplication sharedApplication]delegate];
