@@ -33,8 +33,8 @@
 
 -(void) viewDidLoad{
     [super viewDidLoad];
-    
     _groceryItem=[dataController itemInList:MAIN atIndexPath:selectedIndex];
+    _quantity=[dataController quantityForItem:_groceryItem inList:MAIN];
     [self initViewWithItem:_groceryItem];
     [self initButtons];
 }
@@ -66,7 +66,8 @@
     [dataController removeItem:_groceryItem fromList:MAIN];
     [[self navigationController] popViewControllerAnimated:YES];
 }
-#pragma try implemenenting copy
+
+
 -(void)addItem{
     Item* newItem=[Item itemFromItem:_groceryItem inContext:[dataController managedObjectContext]];
     [dataController addItem:newItem toList:MAIN];

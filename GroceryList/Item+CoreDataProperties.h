@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *itemSpecs;
 @property (nonatomic, assign) BOOL isFavorite;
 -(void) initImages;
+-(BOOL) isSameItem:(Item*) item;
 +(Item*)itemFromItem:(Item*)item inContext:(NSManagedObjectContext*)managedObjectContext;
 +(Item*) itemFromGroceryItem:(GroceryItem *)item inContext:(NSManagedObjectContext*) managedObjectContext;
 +(Item*)itemFromWalmartQueryResults:(NSDictionary*) result inContext:(NSManagedObjectContext*) managedObjectContext;

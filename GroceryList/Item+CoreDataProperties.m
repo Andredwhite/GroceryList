@@ -50,6 +50,22 @@
         [[NSNotificationCenter defaultCenter]postNotificationName:@"ThumbUpdated" object:self];
     }
 }
+/* Purpose: Check if an Item is the same as another, but different instance 
+   Params: Item to check against. 
+   Ret: Yes if same item, NO if different.
+ */
+
+-(BOOL) isSameItem:(Item*) item{
+    if ([item.itemID isEqualToNumber:self.itemID]) {
+        return YES;
+    }
+    if ([item.itemName isEqualToString:self.itemName]&&[item.itemSpecs isEqualToString:self.itemSpecs]) {
+        return YES;
+    }
+    else{
+        return NO;
+    }
+}
 +(Item*)itemFromItem:(Item*)item inContext:(NSManagedObjectContext*)managedObjectContext
 {
     Item* returnable=[NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:managedObjectContext];

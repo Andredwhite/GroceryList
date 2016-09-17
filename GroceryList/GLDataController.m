@@ -139,6 +139,26 @@
     }
      */
 }
+
+/*  Purpose: Get quantity for a given Item.
+    Params: Item to get quantity for, NSInteger enum ListType (MAIN)
+    Ret: NSInteger representing the quantity for Item.
+ */
+-(NSInteger) quantityForItem:(Item*) item inList:(NSInteger) listType{
+    NSInteger quantity=0;
+    switch (listType) {
+        case MAIN:
+            for (Item* thing in [self getListWithType:MAIN]) {
+                if ([item isSameItem:thing]) {
+                    quantity++;
+                }
+            }
+            break;
+        default:
+            break;
+    }
+    return quantity;
+}
 -(void) sortListWithType:(NSInteger)listType{
     switch (listType) {
         case FAVORITES:

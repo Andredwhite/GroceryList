@@ -24,7 +24,7 @@ typedef enum {
 @property (readonly) NSFetchedResultsController* theResultsController;
 @property (readonly) NSNumberFormatter* priceFormat;
 -(Item*) itemInList:(NSInteger) listType atIndexPath:(NSIndexPath*) indexPath;
--(NSInteger) quantityForItem:(Item*) item inList:(NSString*) listName;
+-(NSInteger) quantityForItem:(Item*) item inList:(NSInteger) listType;
 -(NSNumber*) getPriceForList:(NSInteger)listType;
 -(BOOL) yaFav:(Item*) item;
 -(void) addItem:(Item*)item toList:(NSInteger) listType;
