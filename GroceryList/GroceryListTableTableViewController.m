@@ -38,6 +38,7 @@
     self.navigationController.toolbarHidden=NO;
     AppDelegate* appDelegate=(AppDelegate*)[[UIApplication sharedApplication]delegate];
     _dataController=[appDelegate dataController];
+    [_dataController setBudget:@60];
     [self updateListPrice];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateThumb) name:@"ThumbUpdated" object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(updateTable) name:@"MainListChanged" object:nil];
@@ -58,7 +59,14 @@
     self.navigationItem.rightBarButtonItem = _addButton;
     UIBarButtonItem* space=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     _budgetButton = [[UIBarButtonItem alloc] initWithTitle:nil style:UIBarButtonItemStylePlain target:self action:@selector(editBudgetSegue)];
+    _budgetButton.tintColor=[self colorForBudgetButton];
     self.toolbarItems=@[space,_budgetButton,space];
+}
+-(UIColor*) colorForBudgetButton{
+    if ([_dataController mainListOverBudget]) {
+        return [UIColor redColor];
+    }
+    return [UIColor blackColor];
 }
 -(void)setEditing:(BOOL)editing animated:(BOOL)animated{
     [super setEditing:editing animated:animated];
@@ -142,6 +150,7 @@
 -(void) updateListPrice{
     
     _budgetButton.title=[[_dataController priceFormat] stringFromNumber:[_dataController getPriceForList:MAIN]];
+    _budgetButton.tintColor=[self colorForBudgetButton];
 }
 
 // Override to support editing the table view.

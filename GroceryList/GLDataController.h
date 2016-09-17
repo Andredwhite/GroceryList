@@ -24,6 +24,7 @@ typedef enum {
 @property (readonly) NSFetchedResultsController* theResultsController;
 @property (readonly) NSNumberFormatter* priceFormat;
 @property (retain, nonatomic) NSNumber* budget;
+-(BOOL) mainListOverBudget;
 -(Item*) itemInList:(NSInteger) listType atIndexPath:(NSIndexPath*) indexPath;
 -(NSInteger) quantityForItem:(Item*) item inList:(NSInteger) listType;
 -(NSNumber*) getPriceForList:(NSInteger)listType;
