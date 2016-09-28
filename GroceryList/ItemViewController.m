@@ -10,7 +10,7 @@
 #import "InternetConnection.h"
 #import "Item+CoreDataProperties.h"
 #import "GLDataController.h"
-@interface ItemViewController ()
+@interface ItemViewController ()<UIWebViewDelegate>
 @property(strong, nonatomic)UIBarButtonItem* trashButton;
 @property(strong, nonatomic)UIBarButtonItem* quantityButton;
 @property(strong, nonatomic)UIBarButtonItem* upOneButton;
@@ -29,7 +29,7 @@
 @synthesize dataController;
 @synthesize selectedIndex;
 @synthesize ItemSpecsLabel;
-
+@synthesize graphView;
 
 -(void) viewDidLoad{
     [super viewDidLoad];
@@ -37,6 +37,9 @@
     _quantity=[dataController quantityForItem:_groceryItem inList:MAIN];
     [self initViewWithItem:_groceryItem];
     [self initButtons];
+    NSString* filePath=[[NSBundle mainBundle]pathForResource:@"xtra/extra_animationwithgradient" ofType:@"html"];
+    graphView.delegate=self;
+    [graphView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:filePath]]];
 }
 -(void)initButtons{
     _favoritesButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(addItemToFavs)];

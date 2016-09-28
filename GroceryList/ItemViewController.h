@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *ItemSpecsLabel;
 @property (strong, nonatomic) GLDataController* dataController;
 @property (strong, nonatomic) NSIndexPath* selectedIndex;
+@property (weak, nonatomic) IBOutlet UIWebView *graphView;
 
 
 @property (strong, nonatomic) UIImage* itemImage;

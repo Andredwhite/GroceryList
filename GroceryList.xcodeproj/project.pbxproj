@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B39A60E1D9C591700430DC2 /* APIKEYS.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B39A60D1D9C591700430DC2 /* APIKEYS.strings */; };
+		5B39A6101D9C5C3200430DC2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5B39A60F1D9C5C3200430DC2 /* .gitignore */; };
 		5B444D4E1D2EFE0C004FADD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B444D4D1D2EFE0C004FADD5 /* main.m */; };
 		5B444D511D2EFE0C004FADD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B444D501D2EFE0C004FADD5 /* AppDelegate.m */; };
 		5B444D571D2EFE0C004FADD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B444D551D2EFE0C004FADD5 /* Main.storyboard */; };
@@ -29,6 +31,7 @@
 		5BBC576E1D5FD5E800C57BDB /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC576C1D5FD5E800C57BDB /* User+CoreDataProperties.m */; };
 		5BBC57711D612F6800C57BDB /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC57701D612F6800C57BDB /* FavoritesTableViewController.m */; };
 		5BBE83ED1D641E8900618625 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BBE83EC1D641E8800618625 /* CoreData.framework */; };
+		5BCC10BA1D8E8FC90051BB6C /* xtra in Resources */ = {isa = PBXBuildFile; fileRef = 5BCC10B91D8E8FC90051BB6C /* xtra */; };
 		5BE878691D41EC7B0034FA8E /* InternetConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE878681D41EC7B0034FA8E /* InternetConnection.m */; };
 		5BF3FCF71D7E91E400077CA1 /* GrocerySearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3FCF61D7E91E400077CA1 /* GrocerySearchController.m */; };
 		5BFEF99D1D3F0C9000256DF6 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFEF99C1D3F0C9000256DF6 /* AddItemViewController.m */; };
@@ -54,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B39A60D1D9C591700430DC2 /* APIKEYS.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = APIKEYS.strings; sourceTree = "<group>"; };
+		5B39A60F1D9C5C3200430DC2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5B444D491D2EFE0C004FADD5 /* GroceryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B444D4D1D2EFE0C004FADD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B444D4F1D2EFE0C004FADD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +100,7 @@
 		5BBC576F1D612F6800C57BDB /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
 		5BBC57701D612F6800C57BDB /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
 		5BBE83EC1D641E8800618625 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5BCC10B91D8E8FC90051BB6C /* xtra */ = {isa = PBXFileReference; lastKnownFileType = folder; name = xtra; path = ../../Desktop/xtra; sourceTree = "<group>"; };
 		5BE878671D41EC7B0034FA8E /* InternetConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InternetConnection.h; path = ../InternetConnection.h; sourceTree = "<group>"; };
 		5BE878681D41EC7B0034FA8E /* InternetConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InternetConnection.m; path = ../InternetConnection.m; sourceTree = "<group>"; };
 		5BE8786C1D4335750034FA8E /* InternetConnectionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternetConnectionProtocol.h; sourceTree = "<group>"; };
@@ -139,6 +145,7 @@
 		5B444D401D2EFE0C004FADD5 = {
 			isa = PBXGroup;
 			children = (
+				5B39A60F1D9C5C3200430DC2 /* .gitignore */,
 				5B48C1731D76CFEC00C3BDE4 /* NSArray+listCategories.h */,
 				5B48C1741D76CFEC00C3BDE4 /* NSArray+listCategories.m */,
 				5B444D4B1D2EFE0C004FADD5 /* GroceryList */,
@@ -175,6 +182,7 @@
 				5BE8786A1D41EC990034FA8E /* ViewControllers */,
 				5BE8786B1D41ECF40034FA8E /* GroceryList */,
 				5B444D5B1D2EFE0D004FADD5 /* Assets.xcassets */,
+				5BCC10B91D8E8FC90051BB6C /* xtra */,
 				5B444D551D2EFE0C004FADD5 /* Main.storyboard */,
 				5B444D5D1D2EFE0D004FADD5 /* LaunchScreen.storyboard */,
 				5B444D601D2EFE0D004FADD5 /* Info.plist */,
@@ -206,6 +214,7 @@
 			children = (
 				5B444D741D2EFE0D004FADD5 /* GroceryListUITests.m */,
 				5B444D761D2EFE0D004FADD5 /* Info.plist */,
+				5B39A60D1D9C591700430DC2 /* APIKEYS.strings */,
 			);
 			path = GroceryListUITests;
 			sourceTree = "<group>";
@@ -379,6 +388,7 @@
 				5B444D5F1D2EFE0D004FADD5 /* LaunchScreen.storyboard in Resources */,
 				5B444D5C1D2EFE0D004FADD5 /* Assets.xcassets in Resources */,
 				5B444D571D2EFE0C004FADD5 /* Main.storyboard in Resources */,
+				5BCC10BA1D8E8FC90051BB6C /* xtra in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +403,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B39A6101D9C5C3200430DC2 /* .gitignore in Resources */,
+				5B39A60E1D9C591700430DC2 /* APIKEYS.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
