@@ -166,14 +166,16 @@ typedef enum{
 
 -(NSURL*) WalmartSearchQueryString:(NSString*) searchItem{
     searchItem=[searchItem stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSString* requestString=[NSString stringWithFormat:@"http://api.walmartlabs.com/v1/search?query=%@&format=json&apiKey=qbx2jk66swzvcgj2t8x6wuzx",searchItem];
+    NSString* key=NSLocalizedString(@"WMAPIKEY", @"key");
+    NSString* requestString=[NSString stringWithFormat:@"http://api.walmartlabs.com/v1/search?query=%@&format=json&apiKey=%@",searchItem,key];
     NSURL* walmartSearchURL=[NSURL URLWithString:requestString];
     return walmartSearchURL;
     
 }
 
 -(NSURL*) WalmartLookupQueryString:(NSString*) itemID{
-    NSString* requestString=[NSString stringWithFormat:@"http://api.walmartlabs.com/v1/items/%@?format=json&apiKey=qbx2jk66swzvcgj2t8x6wuzx",itemID];
+    NSString* key=NSLocalizedString(@"WMAPIKEY", @"key");
+    NSString* requestString=[NSString stringWithFormat:@"http://api.walmartlabs.com/v1/items/%@?format=json&apiKey=%@",itemID, key];
     return [[NSURL alloc]initWithString:requestString];
 }
 
@@ -194,7 +196,8 @@ typedef enum{
 }
 -(NSURL*)SMAPISearchQueryString:(NSString*) searchItem{
     searchItem=[searchItem stringByReplacingOccurrencesOfString:@" " withString:@"_"];
-    NSString* requestString=[NSString stringWithFormat:@"http://www.SupermarketAPI.com/api.asmx/COMMERCIAL_SearchByProductName?APIKEY=bd08908132&ItemName=%@",searchItem];
+    NSString* key=NSLocalizedString(@"GRAPIKEY", @"key");
+    NSString* requestString=[NSString stringWithFormat:@"http://www.SupermarketAPI.com/api.asmx/COMMERCIAL_SearchByProductName?APIKEY=%@&ItemName=%@",key,searchItem];
     return [[NSURL alloc]initWithString:requestString];
 }
 -(void) connectionDataHandlerXML:(NSData*)data{
