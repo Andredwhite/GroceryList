@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B39A60E1D9C591700430DC2 /* APIKEYS.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B39A60D1D9C591700430DC2 /* APIKEYS.strings */; };
 		5B39A6101D9C5C3200430DC2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5B39A60F1D9C5C3200430DC2 /* .gitignore */; };
+		5B39A6121D9C5F7900430DC2 /* GLAPIKEYS.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B39A6111D9C5F7900430DC2 /* GLAPIKEYS.strings */; };
 		5B444D4E1D2EFE0C004FADD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B444D4D1D2EFE0C004FADD5 /* main.m */; };
 		5B444D511D2EFE0C004FADD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B444D501D2EFE0C004FADD5 /* AppDelegate.m */; };
 		5B444D571D2EFE0C004FADD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B444D551D2EFE0C004FADD5 /* Main.storyboard */; };
@@ -57,8 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5B39A60D1D9C591700430DC2 /* APIKEYS.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = APIKEYS.strings; path = GroceryListUITests/APIKEYS.strings; sourceTree = "<group>"; };
 		5B39A60F1D9C5C3200430DC2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5B39A6111D9C5F7900430DC2 /* GLAPIKEYS.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = GLAPIKEYS.strings; sourceTree = "<group>"; };
 		5B444D491D2EFE0C004FADD5 /* GroceryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B444D4D1D2EFE0C004FADD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B444D4F1D2EFE0C004FADD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,9 +145,9 @@
 		5B444D401D2EFE0C004FADD5 = {
 			isa = PBXGroup;
 			children = (
+				5B39A6111D9C5F7900430DC2 /* GLAPIKEYS.strings */,
 				5B39A60F1D9C5C3200430DC2 /* .gitignore */,
 				5B48C1731D76CFEC00C3BDE4 /* NSArray+listCategories.h */,
-				5B39A60D1D9C591700430DC2 /* APIKEYS.strings */,
 				5B48C1741D76CFEC00C3BDE4 /* NSArray+listCategories.m */,
 				5B444D4B1D2EFE0C004FADD5 /* GroceryList */,
 				5B444D681D2EFE0D004FADD5 /* GroceryListTests */,
@@ -404,7 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B39A6101D9C5C3200430DC2 /* .gitignore in Resources */,
-				5B39A60E1D9C591700430DC2 /* APIKEYS.strings in Resources */,
+				5B39A6121D9C5F7900430DC2 /* GLAPIKEYS.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
