@@ -57,7 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5B39A60D1D9C591700430DC2 /* APIKEYS.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = APIKEYS.strings; sourceTree = "<group>"; };
+		5B39A60D1D9C591700430DC2 /* APIKEYS.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = APIKEYS.strings; path = GroceryListUITests/APIKEYS.strings; sourceTree = "<group>"; };
 		5B39A60F1D9C5C3200430DC2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5B444D491D2EFE0C004FADD5 /* GroceryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B444D4D1D2EFE0C004FADD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -147,6 +147,7 @@
 			children = (
 				5B39A60F1D9C5C3200430DC2 /* .gitignore */,
 				5B48C1731D76CFEC00C3BDE4 /* NSArray+listCategories.h */,
+				5B39A60D1D9C591700430DC2 /* APIKEYS.strings */,
 				5B48C1741D76CFEC00C3BDE4 /* NSArray+listCategories.m */,
 				5B444D4B1D2EFE0C004FADD5 /* GroceryList */,
 				5B444D681D2EFE0D004FADD5 /* GroceryListTests */,
@@ -214,7 +215,6 @@
 			children = (
 				5B444D741D2EFE0D004FADD5 /* GroceryListUITests.m */,
 				5B444D761D2EFE0D004FADD5 /* Info.plist */,
-				5B39A60D1D9C591700430DC2 /* APIKEYS.strings */,
 			);
 			path = GroceryListUITests;
 			sourceTree = "<group>";
