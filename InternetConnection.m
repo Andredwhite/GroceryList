@@ -43,6 +43,47 @@ typedef enum{
     return self;
 }
 
+-(void) Semantics3Query:(NSString *)searchItem andType:(NSInteger)queryType{
+    NSMutableDictionary* queryDict= [[NSMutableDictionary alloc]init];
+    switch (queryType) {
+        case SEARCHBYNAME:
+            [queryDict setObject:[NSString stringWithFormat:@"\"%@\"",searchItem] forKey:@"\"search\""];
+            break;
+        case SEARCHBYUPC:
+            [queryDict setObject:[NSString stringWithFormat:@"\"%@\"",searchItem] forKey:@"\"upc\""];
+            [queryDict setObject:@"[\"name\", \"sem3_id\"]" forKey:@"\"fields\""];
+            break;
+        default:
+            break;
+    }
+    NSMutableString* queryString=[[NSMutableString alloc]init];
+    for(NSString* key in [queryDict allKeys]){
+        [queryString appendString:[NSString stringWithFormat:@" %@ :%@, ", key, [queryDict objectForKey:key]]];
+    }
+    if (queryType==SEARCHBYUPC) {
+        NSRange range=NSMakeRange(queryString.length-2, 2);
+        [queryString deleteCharactersInRange:range];
+    }
+    NSString* url=[NSString stringWithFormat:@"https://api.semantics3.com/test/v1/products?q={%@}",queryString];
+    NSURLSession* dataSession=[NSURLSession sharedSession];
+    NSURLSessionDataTask* task=[[NSURLSessionDataTask alloc]init];
+    NSURL* requestURL= [NSURL URLWithString:url];
+    NSMutableURLRequest* request=[NSMutableURLRequest requestWithURL:requestURL];
+    NSString* authKey=NSLocalizedStringFromTableInBundle(@"SEMAPIKEY",@"GLAPIKEYS.strings",[NSBundle mainBundle], @"key");
+    NSString* authSec=NSLocalizedStringFromTableInBundle(@"SEMSecret",@"GLAPIKEYS.strings",[NSBundle mainBundle] , @"Secret");
+    [request setValue:authKey forHTTPHeaderField:@"oauth_consumer_key"];
+    [request setValue:authSec forHTTPHeaderField:@"oauth_token"];
+    task=[dataSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (debug) {
+            NSLog(@"Inside the completion handler block for dataTask");
+            NSLog(@"%@",data);
+            NSLog(@"%@",error.localizedFailureReason);
+        }
+        NSLog(@"%@",response);
+    }];
+    [task resume];
+    
+}
 -(id<InternetConnectionProtocol>)delegate{
     return _theDelegate;
 }

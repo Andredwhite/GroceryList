@@ -54,9 +54,24 @@
 			remoteGlobalIDString = 5B444D481D2EFE0C004FADD5;
 			remoteInfo = GroceryList;
 		};
+		5B5726EE1D9C6D2700828AC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B5726E81D9C6D2700828AC1 /* semantics3-objc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DD1019F1830311D00CEBF62;
+			remoteInfo = "semantics3-objc";
+		};
+		5B5726F01D9C6D2700828AC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B5726E81D9C6D2700828AC1 /* semantics3-objc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DD101AF1830311D00CEBF62;
+			remoteInfo = "semantics3-objcTests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B0F7C9C1D9C738000F53F3D /* Debug-iphoneos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Debug-iphoneos"; path = "../Projects/semantics3-objc/build/semantics3-objc.build/Debug-iphoneos"; sourceTree = "<group>"; };
 		5B39A60F1D9C5C3200430DC2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5B39A6111D9C5F7900430DC2 /* GLAPIKEYS.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = GLAPIKEYS.strings; sourceTree = "<group>"; };
 		5B444D491D2EFE0C004FADD5 /* GroceryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +94,7 @@
 		5B48C1741D76CFEC00C3BDE4 /* NSArray+listCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+listCategories.m"; sourceTree = "<group>"; };
 		5B553A101D5E807F000498FE /* BudgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetViewController.h; sourceTree = "<group>"; };
 		5B553A111D5E8080000498FE /* BudgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetViewController.m; sourceTree = "<group>"; };
+		5B5726E81D9C6D2700828AC1 /* semantics3-objc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "semantics3-objc.xcodeproj"; path = "../Projects/semantics3-objc/semantics3-objc.xcodeproj"; sourceTree = "<group>"; };
 		5B61434E1D45E86A005E8A5F /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
 		5B61434F1D45E86A005E8A5F /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
 		5B618C3D1D59254200C3F44F /* GLDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GLDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -93,6 +109,7 @@
 		5B8C95F61D5CEC50000F3BED /* Item+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+CoreDataClass.m"; sourceTree = "<group>"; };
 		5B8C95F71D5CEC50000F3BED /* Item+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Item+CoreDataProperties.h"; sourceTree = "<group>"; };
 		5B8C95F81D5CEC50000F3BED /* Item+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5BA8B98F1D9E3B33004AAB38 /* GLTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLTypes.h; sourceTree = "<group>"; };
 		5BBC57691D5FD5E800C57BDB /* User+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataClass.h"; sourceTree = "<group>"; };
 		5BBC576A1D5FD5E800C57BDB /* User+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
 		5BBC576B1D5FD5E800C57BDB /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -146,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				5B39A6111D9C5F7900430DC2 /* GLAPIKEYS.strings */,
+				5BA8B98F1D9E3B33004AAB38 /* GLTypes.h */,
 				5B39A60F1D9C5C3200430DC2 /* .gitignore */,
 				5B48C1731D76CFEC00C3BDE4 /* NSArray+listCategories.h */,
 				5B48C1741D76CFEC00C3BDE4 /* NSArray+listCategories.m */,
@@ -219,9 +237,20 @@
 			path = GroceryListUITests;
 			sourceTree = "<group>";
 		};
+		5B5726E91D9C6D2700828AC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B5726EF1D9C6D2700828AC1 /* libsemantics3-objc.a */,
+				5B5726F11D9C6D2700828AC1 /* semantics3-objcTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5BBE83EB1D641E8600618625 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B0F7C9C1D9C738000F53F3D /* Debug-iphoneos */,
+				5B5726E81D9C6D2700828AC1 /* semantics3-objc.xcodeproj */,
 				5BBE83EC1D641E8800618625 /* CoreData.framework */,
 			);
 			name = Frameworks;
@@ -371,6 +400,12 @@
 			mainGroup = 5B444D401D2EFE0C004FADD5;
 			productRefGroup = 5B444D4A1D2EFE0C004FADD5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5B5726E91D9C6D2700828AC1 /* Products */;
+					ProjectRef = 5B5726E81D9C6D2700828AC1 /* semantics3-objc.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5B444D481D2EFE0C004FADD5 /* GroceryList */,
@@ -379,6 +414,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5B5726EF1D9C6D2700828AC1 /* libsemantics3-objc.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libsemantics3-objc.a";
+			remoteRef = 5B5726EE1D9C6D2700828AC1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5B5726F11D9C6D2700828AC1 /* semantics3-objcTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "semantics3-objcTests.xctest";
+			remoteRef = 5B5726F01D9C6D2700828AC1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5B444D471D2EFE0C004FADD5 /* Resources */ = {
@@ -493,7 +545,7 @@
 		5B444D771D2EFE0D004FADD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -529,6 +581,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/../UninstalledProducts/include\"";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -539,7 +592,7 @@
 		5B444D781D2EFE0D004FADD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -569,6 +622,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/../UninstalledProducts/include\"";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -585,6 +639,10 @@
 				INFOPLIST_FILE = GroceryList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = AndreWhite.GroceryList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -601,6 +659,10 @@
 				INFOPLIST_FILE = GroceryList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				"OTHER_LDFLAGS[arch=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = AndreWhite.GroceryList;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -11,6 +11,7 @@
 typedef enum {
     SEARCHBYID,
     SEARCHBYNAME,
+    SEARCHBYUPC
     
 }QueryType;
 @class UITableViewCell;
@@ -25,4 +26,5 @@ typedef enum {
 -(void) WalmartImageForItem:(NSURL*) itemImageURL;
 -(void) WalmartThumbImageForItem:(NSURL*) itemImageURL forCell:(UITableViewCell*) cell;
 -(void) WalmartThumbImageForItem:(NSURL*) itemImageURL;
+-(void) Semantics3Query:(NSString*) searchItem andType:(NSInteger) queryType;
 @end

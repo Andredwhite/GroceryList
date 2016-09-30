@@ -27,7 +27,9 @@
     return self;
 }
 -(void) searchForItemByName:(NSString *)itemName{
-    [_connection SMAPISearchQuery:itemName andType:SEARCHBYNAME];
+    //[_connection SMAPISearchQuery:itemName andType:SEARCHBYNAME];
+    [_connection Semantics3Query:itemName andType:SEARCHBYUPC];
+
    // [_connection WalmartSearchQuery:itemName andType:SEARCHBYNAME];
 }
 -(NSArray*) allCategories{
